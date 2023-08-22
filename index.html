@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Bài tập</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./Css/index.css">
+  </head>
+  <body>
+      
+    <div class="header text-center ">
+        <h1>Bài tập buổi 5</h1>
+    </div>
+
+    <!-- Ex1 -->
+
+    <div class="container">
+        <div class="content">
+            <h3>Quản lí tuyển sinh</h3>
+            <form action="" id="tuyenSinh">
+                <select name="khuVuc" id="khuVuc">
+                    <option value="kvD" disabled selected hidden>Chọn khu vực</option>
+                    <option value="kvA">Khu vực A</option>
+                    <option value="kvB">Khu vực B</option>
+                    <option value="kvC">Khu vực C</option>
+                    <option value="kvD">Không phải là khu vực</option>
+                </select>
+                <select name="doiTuong" id="doiTuong">
+                    <option value="doiTuong0">Chọn đối tượng</option>
+                    <option value="doiTuong1">Đối tượng 1</option>
+                    <option value="doiTuong2">Đối tượng 2</option>
+                    <option value="doiTuong3">Đối tượng 3</option>
+                    <option value="doiTuong0">Không phải là đối tượng</option>
+                </select>
+                <br>
+                <input type="number" id="diemChuan" placeholder="Nhập điểm chuẩn" value="">
+                <input type="number" id="diem1" placeholder="Nhập điểm thứ nhất" value="">
+                <input type="number" id="diem2" placeholder="Nhập điểm thứ hai" value="">
+                <input type="number" id="diem3" placeholder="Nhập điểm thứ ba" value="">
+                <button type="submit">Kết quả</button>
+            </form>
+            <div class="result" id="result"></div>
+        </div>
+    </div>
+<br><br><br><br><br>
+    <!-- Ex2 -->
+
+    <div class="container">
+        <div class="content">
+            <h3>Tính tiền điện</h3>
+            <form action="" id="Electricity" >
+                <input type="text" id="name" placeholder="Nhập họ tên" value="">
+                <input type="number" id="kilowatts" placeholder="Nhập số KW điện" value="">
+                <button type="submit">Tính</button>
+            </form>
+            <div class="result" id="result2"></div>
+        </div>
+    </div>
+
+    <!-- Ex3 -->
+    <br><br><br><br><br>
+    <div class="container">
+        <div class="content">
+            <h3>Tính tiền thuế thu nhập cá nhân</h3>
+            <form action="" id="Income" >
+                <input type="text" id="name2" placeholder="Nhập họ tên" value="">
+                <input type="number" id="salary" placeholder="Nhập tổng thu nhập năm" value="">
+                <input type="number" id="Student" placeholder="Nhập số người phụ thuộc" value="">
+                <button type="submit">Tính thuế</button>
+            </form>
+            <div class="result" id="result3"></div>
+        </div>
+    </div>
+    <br><br><br><br><br>
+    <!-- Ex4 -->
+    <div class="container">
+        <div class="content">
+            <h3>Tính tiền cáp</h3>
+            <form action="" id="cableMoney" >
+                <select name="" id="loaiKH" onchange="changeKH()">
+                    <option value="kh0">Chọn khách hàng</option>
+                    <option value="nhaDan">Nhà dân</option>
+                    <option value="doanhNgiep">Doanh nghiệp</option>
+                </select>
+                <br>
+                <input type="text" id="maKH" placeholder="Nhập mã khách hàng" value="">
+                <input type="number" id="kenhCC" placeholder="Nhập số kênh cao cấp" value="">
+                <input type="number" id="soKN" placeholder="Kết nối" value="">
+                <button type="submit">Tính tiền</button>
+            </form>
+            <div class="result" id="result4"></div>
+        </div>
+    </div>
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
